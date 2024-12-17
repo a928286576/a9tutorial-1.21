@@ -1,0 +1,25 @@
+{
+  "itemGroup.examplemod": "Example Mod Tab",
+  "block.examplemod.example_block": "Example Block",
+  "item.studymod.one": "One",
+  "item.studymod.two": "Two",
+  "item.studymod.three": "Three",
+  "item.studymod.four": "Four",
+  "item.studymod.five": "Five",
+
+  "block.studymod.one_block": "Block of One",
+  "block.studymod.one_ore": "Ore of One",
+  "block.studymod.magic_block": "Magic Block",
+
+  "creativetab.studymod.first_items": "First Items",
+  "creativetab.studymod.first_blocks": "First Blocks",
+
+  "tooltip.studymod.magic_block.tooltip": "This block is §9MAGIC§r!",
+  "tooltip.studymod.two.tooltip1": "This item can §6CHANGE BLOCKS§r!",
+  "tooltip.studymod.two.tooltip2": "Press §0SHIFT§r",
+  "tooltip.studymod.two.shift_tooltip1": "STOME to STONE_BRICKS",
+  "tooltip.studymod.two.shift_tooltip2": "IRON_ORE to STONE",
+  "tooltip.studymod.two.shift_tooltip3": "NETHERRACK to ONE_BLOCK",
+  "tooltip.studymod.three.tooltip": "It may be useful for your health!"
+
+}

@@ -1,0 +1,25 @@
+{
+  "itemGroup.examplemod": "Example Mod Tab",
+  "block.examplemod.example_block": "Example Block",
+  "item.studymod.one": "其一",
+  "item.studymod.two": "其二",
+  "item.studymod.three": "其三",
+  "item.studymod.four": "其四",
+  "item.studymod.five": "其五",
+
+  "block.studymod.one_block": "一之块",
+  "block.studymod.one_ore": "一之矿",
+  "block.studymod.magic_block": "魔法块",
+
+  "creativetab.studymod.first_items": "学习模组·物品",
+  "creativetab.studymod.first_blocks": "学习模组·方块",
+
+  "tooltip.studymod.magic_block.tooltip": "这个块可以§1转换§r其上的§2物品§r!",
+  "tooltip.studymod.two.tooltip1": "§3这个§r§4物品§r§5可以§r§6改造方块§r!",
+  "tooltip.studymod.two.tooltip2": "按住§7SHIFT§r可查看转换列表",
+  "tooltip.studymod.two.shift_tooltip1": "石头转化成石砖",
+  "tooltip.studymod.two.shift_tooltip2": "铁方块转化成石头",
+  "tooltip.studymod.two.shift_tooltip3": "地狱岩转化成一之块",
+  "tooltip.studymod.three.tooltip": "这可能使你更加健康!"
+
+}

@@ -1,16 +1,22 @@
 
-Installation information
+学习编写模组
 =======
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+物品one是学习的第一个普通物品,延伸物品合成的one_block和one_ore
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+物品two是学习的特殊工具,用途是转化对应的方块
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+two_block是特殊方块,具有替换接触到的掉落物品实体和空手右键发声
+
+three是学习如何制作食物,以及包含哪些效果
+
+four是学习制作燃料
+
+five是通过数据包的形式继承燃料的属性并进行修改
+
+学习了如何使用tooltips添加物品描述
+
+学习了如何使用tag来批量的为物品增加功能
 
 Mapping Names:
 ============
