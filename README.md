@@ -18,6 +18,8 @@ five是通过数据包的形式继承燃料的属性并进行修改
 
 学习了如何使用tag来批量的为物品增加功能
 
+学习了如何使用datagen来自动生成物品模型和物品描述文件
+
 Mapping Names:
 ============
 By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
