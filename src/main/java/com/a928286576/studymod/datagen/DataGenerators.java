@@ -47,6 +47,9 @@ public class DataGenerators{
         //ModItemTagProvider 用于生成item的tag有关json文件
         generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
 
+        //ModDataMapProviders 用于生成datamap的json文件
+        generator.addProvider(event.includeServer(), new ModDataMapProvider(packOutput, lookupProvider));
+
         //ModItemModelProvider 用于生成物品模型json文件
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
         //ModBlockStateProvider 用于生成方块状态json文件

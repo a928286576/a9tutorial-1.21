@@ -20,6 +20,8 @@ five是通过数据包的形式继承燃料的属性并进行修改
 
 学习了如何使用datagen来自动生成物品模型和物品描述文件
 
+补充了部分datagen,现在所有json均可以自动生成了
+
 Mapping Names:
 ============
 By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
