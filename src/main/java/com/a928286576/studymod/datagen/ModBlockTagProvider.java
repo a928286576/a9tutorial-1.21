@@ -22,13 +22,31 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ONE_BLOCK.get())
                 .add(ModBlocks.ONE_ORE.get())
-                .add(ModBlocks.MAGIC_BLOCK.get());
+                .add(ModBlocks.MAGIC_BLOCK.get())
+                .add(ModBlocks.ONE_BUTTON.get())
+                .add(ModBlocks.ONE_DOOR.get())
+                .add(ModBlocks.ONE_TRAPDOOR.get())
+                .add(ModBlocks.ONE_FENCE_GATE.get())
+                .add(ModBlocks.ONE_FENCE.get())
+                .add(ModBlocks.ONE_WALL.get())
+                .add(ModBlocks.ONE_STAIRS.get())
+                .add(ModBlocks.ONE_SLAB.get())
+                .add(ModBlocks.ONE_PRESSURE_PLATE.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.ONE_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.ONE_ORE.get());
+                .add(ModBlocks.ONE_ORE.get())
+                .add(ModBlocks.ONE_BUTTON.get())
+                .add(ModBlocks.ONE_DOOR.get())
+                .add(ModBlocks.ONE_TRAPDOOR.get())
+                .add(ModBlocks.ONE_FENCE_GATE.get())
+                .add(ModBlocks.ONE_FENCE.get())
+                .add(ModBlocks.ONE_WALL.get())
+                .add(ModBlocks.ONE_STAIRS.get())
+                .add(ModBlocks.ONE_SLAB.get())
+                .add(ModBlocks.ONE_PRESSURE_PLATE.get());;
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.MAGIC_BLOCK.get());
