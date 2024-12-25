@@ -40,6 +40,20 @@ public class ModCreativeTabs {
 
                         //(特殊方块)纳入创造标签页
                         output.accept(ModBlocks.MAGIC_BLOCK);
+
+                        output.accept(ModBlocks.ONE_STAIRS);
+                        output.accept(ModBlocks.ONE_SLAB);
+
+                        output.accept(ModBlocks.ONE_FENCE);
+                        output.accept(ModBlocks.ONE_FENCE_GATE);
+                        output.accept(ModBlocks.ONE_WALL);
+
+                        output.accept(ModBlocks.ONE_PRESSURE_PLATE);
+                        output.accept(ModBlocks.ONE_BUTTON);
+
+                        output.accept(ModBlocks.ONE_DOOR);
+                        output.accept(ModBlocks.ONE_TRAPDOOR);
+
                     }).build());
 
     //(第三节创造物品标签)接入总线

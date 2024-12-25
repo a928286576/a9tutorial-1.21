@@ -32,12 +32,29 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.ONE_BLOCK.get());
 
 
+
+
+        dropSelf(ModBlocks.ONE_STAIRS.get());
+        add(ModBlocks.ONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ONE_SLAB.get()));
+        dropSelf(ModBlocks.ONE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.ONE_BUTTON.get());
+
+        dropSelf(ModBlocks.ONE_FENCE.get());
+        dropSelf(ModBlocks.ONE_FENCE_GATE.get());
+        dropSelf(ModBlocks.ONE_TRAPDOOR.get());
+        dropSelf(ModBlocks.ONE_WALL.get());
+
+        add(ModBlocks.ONE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.ONE_DOOR.get()));
+
+
         add(ModBlocks.MAGIC_BLOCK.get(),
                 // 原版方法createOreDrop,可以配置掉落对应物品
-                (block) -> createOreDrop(ModBlocks.MAGIC_BLOCK.get(), Items.NETHER_STAR));
+                block -> createOreDrop(ModBlocks.MAGIC_BLOCK.get(), Items.NETHER_STAR));
         add(ModBlocks.ONE_ORE.get(),
                 // 自定义方法createMultipOreDrops,可以配置掉落对应物品和数量
-                (block) -> createMultipOreDrops(ModBlocks.ONE_ORE.get(), ModItems.ONE.get(), 2.0f, 5.0f));
+                block -> createMultipOreDrops(ModBlocks.ONE_ORE.get(), ModItems.ONE.get(), 2.0f, 5.0f));
     }
 
     protected LootTable.Builder createMultipOreDrops(Block pBlock, Item item, float mindrops, float maxdrops){

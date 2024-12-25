@@ -6,10 +6,10 @@ import com.a928286576.studymod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -25,6 +25,34 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ONE_BLOCK = registerBlock("one_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<StairBlock> ONE_STAIRS = registerBlock("one_stairs",
+            () -> new StairBlock(ModBlocks.ONE_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<SlabBlock> ONE_SLAB = registerBlock("one_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<PressurePlateBlock> ONE_PRESSURE_PLATE = registerBlock("one_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<ButtonBlock> ONE_BUTTON = registerBlock("one_button",
+            () -> new ButtonBlock(BlockSetType.IRON,20, BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST).noCollission()));
+    public static final DeferredBlock<FenceBlock> ONE_FENCE = registerBlock("one_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<FenceGateBlock> ONE_FENCE_GATE = registerBlock("one_fence_gate",
+            () -> new FenceGateBlock(WoodType.ACACIA, BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<WallBlock> ONE_WALL = registerBlock("one_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<DoorBlock> ONE_DOOR = registerBlock("one_door",
+            () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST).noOcclusion()));
+    public static final DeferredBlock<TrapDoorBlock> ONE_TRAPDOOR = registerBlock("one_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST).noOcclusion()));
+
     public static final DeferredBlock<Block> ONE_ORE = registerBlock("one_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),
                     BlockBehaviour.Properties.of()

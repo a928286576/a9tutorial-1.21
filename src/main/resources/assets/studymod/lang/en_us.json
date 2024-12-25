@@ -11,6 +11,17 @@
   "block.studymod.one_ore": "Ore of One",
   "block.studymod.magic_block": "Magic Block",
 
+  "block.studymod.one_stairs": "Stairs of One",
+  "block.studymod.one_slab": "Slab of One",
+  "block.studymod.one_wall": "Wall of One",
+  "block.studymod.one_fence": "Fence of One",
+  "block.studymod.one_fence_gate": "Fence Gate of One",
+  "block.studymod.one_button": "Button of One",
+  "block.studymod.one_pressure_plate": "Pressure Plate of One",
+  "block.studymod.one_trapdoor": "Trapdoor of One",
+  "block.studymod.one_door": "Door of One",
+
+
   "creativetab.studymod.first_items": "First Items",
   "creativetab.studymod.first_blocks": "First Blocks",
 

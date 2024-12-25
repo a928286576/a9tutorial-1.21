@@ -43,10 +43,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput, "studymod:one_from_magic_block");
 
         oreSmelting(recipeOutput, ONE_SMELTABLES, RecipeCategory.MISC, ModItems.ONE.get(),
-                0.25f, 200, "bismuth");
+                0.25f, 200, "one");
         oreBlasting(recipeOutput, ONE_SMELTABLES, RecipeCategory.MISC, ModItems.ONE.get(),
-                0.25f, 100, "bismuth");
+                0.25f, 100, "one");
 
+        stairBuilder(ModBlocks.ONE_STAIRS.get(), Ingredient.of(ModItems.ONE)).group("one")
+                .unlockedBy("has_one", has(ModItems.ONE)).save(recipeOutput);
+
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ONE_SLAB.get(), ModItems.ONE.get());
+
+        buttonBuilder(ModBlocks.ONE_BUTTON.get(), Ingredient.of(ModItems.ONE.get())).group("one")
+                .unlockedBy("has_one", has(ModItems.ONE.get())).save(recipeOutput);
+
+        pressurePlate(recipeOutput, ModBlocks.ONE_PRESSURE_PLATE.get(), ModItems.ONE.get());
+
+        fenceBuilder(ModBlocks.ONE_FENCE.get(), Ingredient.of(ModItems.ONE.get())).group("one")
+                .unlockedBy("has_one", has(ModItems.ONE.get())).save(recipeOutput);
+
+        fenceGateBuilder(ModBlocks.ONE_FENCE_GATE.get(), Ingredient.of(ModItems.ONE.get())).group("one")
+                .unlockedBy("has_one", has(ModItems.ONE.get())).save(recipeOutput);
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ONE_WALL.get(), ModItems.ONE.get());
+
+        doorBuilder(ModBlocks.ONE_DOOR.get(), Ingredient.of(ModItems.ONE.get())).group("one")
+                .unlockedBy("has_one", has(ModItems.ONE.get())).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.ONE_TRAPDOOR.get(), Ingredient.of(ModItems.ONE.get())).group("one")
+                .unlockedBy("has_one", has(ModItems.ONE.get())).save(recipeOutput);
     }
 
     // 定义一个静态方法 oreSmelting，用于创建熔炼配方
