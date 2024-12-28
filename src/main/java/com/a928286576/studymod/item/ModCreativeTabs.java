@@ -54,6 +54,8 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.ONE_DOOR);
                         output.accept(ModBlocks.ONE_TRAPDOOR);
 
+                        output.accept(ModBlocks.LAMP_BLOCK);
+
                     }).build());
 
     //(第三节创造物品标签)接入总线

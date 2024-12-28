@@ -1,6 +1,7 @@
 package com.a928286576.studymod.block;
 
 import com.a928286576.studymod.StudyMod;
+import com.a928286576.studymod.block.custom.LampBlock;
 import com.a928286576.studymod.block.custom.MagicBlock;
 import com.a928286576.studymod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -62,6 +63,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> LAMP_BLOCK = registerBlock("lamp_block",
+            () -> new LampBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(LampBlock.CLICKED) ? 15 : 0)));
 
     //第二节 这个用法应该是将name和对应的方块定义收集,同时传入道 方块物品 和方块的注册中
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){

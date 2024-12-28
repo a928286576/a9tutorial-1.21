@@ -11,6 +11,18 @@
   "block.studymod.one_ore": "一之矿",
   "block.studymod.magic_block": "魔法块",
 
+  "block.studymod.one_stairs": "楼梯之一",
+  "block.studymod.one_slab": "台阶之一",
+  "block.studymod.one_wall": "墙壁之一",
+  "block.studymod.one_fence": "栅栏之一",
+  "block.studymod.one_fence_gate": "栅栏门之一",
+  "block.studymod.one_button": "按钮之一",
+  "block.studymod.one_pressure_plate": "压力板之一",
+  "block.studymod.one_trapdoor": "活板门之一",
+  "block.studymod.one_door": "门之一",
+
+  "block.studymod.lamp_block": "灯笼块",
+
   "creativetab.studymod.first_items": "学习模组·物品",
   "creativetab.studymod.first_blocks": "学习模组·方块",
 

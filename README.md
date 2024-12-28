@@ -22,6 +22,8 @@ five是通过数据包的形式继承燃料的属性并进行修改
 
 补充了部分datagen,现在所有json均可以自动生成了
 
+加入了第一个光源方块,了解了方块如何添加以及改变方块状态
+
 Mapping Names:
 ============
 By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 

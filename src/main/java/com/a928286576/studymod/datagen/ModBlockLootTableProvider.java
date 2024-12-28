@@ -48,6 +48,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.ONE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.ONE_DOOR.get()));
 
+        dropSelf(ModBlocks.LAMP_BLOCK.get());
+
 
         add(ModBlocks.MAGIC_BLOCK.get(),
                 // 原版方法createOreDrop,可以配置掉落对应物品
