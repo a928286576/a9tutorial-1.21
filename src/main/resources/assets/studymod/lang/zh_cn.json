@@ -32,6 +32,7 @@
   "tooltip.studymod.two.shift_tooltip1": "石头转化成石砖",
   "tooltip.studymod.two.shift_tooltip2": "铁方块转化成石头",
   "tooltip.studymod.two.shift_tooltip3": "地狱岩转化成一之块",
+  "tooltip.studymod.two.coordinates_tooltip": "上次改变的地点: %d %d %d",
   "tooltip.studymod.three.tooltip": "这可能使你更加健康!"
 
 }

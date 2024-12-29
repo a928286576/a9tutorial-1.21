@@ -1,7 +1,9 @@
 package com.a928286576.studymod.item.custom;
 
 import com.a928286576.studymod.block.ModBlocks;
+import com.a928286576.studymod.component.ModDataComponents;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -55,6 +57,8 @@ public class TwoItem extends Item {
 
                 //触发事件后,播放了一个音效
                 level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
         }
 
@@ -72,6 +76,12 @@ public class TwoItem extends Item {
             tooltipComponents.add(Component.translatable("tooltip.studymod.two.tooltip1"));
             tooltipComponents.add(Component.translatable("tooltip.studymod.two.tooltip2"));
         }
+
+        if(stack.get(ModDataComponents.COORDINATES) != null){
+            BlockPos pos = stack.get(ModDataComponents.COORDINATES);
+            tooltipComponents.add(Component.translatable("tooltip.studymod.two.coordinates_tooltip", pos.getX(), pos.getY(), pos.getZ()));
+        }
+
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 

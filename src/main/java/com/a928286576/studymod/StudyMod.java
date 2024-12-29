@@ -1,6 +1,7 @@
 package com.a928286576.studymod;
 
 import com.a928286576.studymod.block.ModBlocks;
+import com.a928286576.studymod.component.ModDataComponents;
 import com.a928286576.studymod.item.ModCreativeTabs;
 import com.a928286576.studymod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -48,6 +49,8 @@ public class StudyMod
         //(第一节创建物品)这是呼应ModItems的内容
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        //(studymod.component.ModDataComponents)接入总线
+        ModDataComponents.register(modEventBus);
 
 
         // 将物品注册到创造标签页

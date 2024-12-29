@@ -32,6 +32,7 @@
   "tooltip.studymod.two.shift_tooltip1": "STOME to STONE_BRICKS",
   "tooltip.studymod.two.shift_tooltip2": "IRON_ORE to STONE",
   "tooltip.studymod.two.shift_tooltip3": "NETHERRACK to ONE_BLOCK",
+  "tooltip.studymod.two.coordinates_tooltip": "Last Block changed: %d %d %d",
   "tooltip.studymod.three.tooltip": "It may be useful for your health!"
 
 }
