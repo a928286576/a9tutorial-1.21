@@ -7,6 +7,12 @@
   "item.studymod.four": "Four",
   "item.studymod.five": "Five",
 
+  "item.studymod.one_sword": "One Sword",
+  "item.studymod.one_pickaxe": "One Pickaxe",
+  "item.studymod.one_axe": "One Axe",
+  "item.studymod.one_shovel": "One Shovel",
+  "item.studymod.one_hoe": "One Hoe",
+
   "block.studymod.one_block": "Block of One",
   "block.studymod.one_ore": "Ore of One",
   "block.studymod.magic_block": "Magic Block",

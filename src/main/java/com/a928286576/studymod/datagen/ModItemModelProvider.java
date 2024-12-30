@@ -6,9 +6,11 @@ import com.a928286576.studymod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -30,6 +32,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModBlocks.ONE_DOOR.asItem());
 
+        handheldItem(ModItems.ONE_SWORD);
+        handheldItem(ModItems.ONE_PICKAXE);
+        handheldItem(ModItems.ONE_SHOVEL);
+        handheldItem(ModItems.ONE_AXE);
+        handheldItem(ModItems.ONE_HOE);
 
     }
 
@@ -53,5 +60,11 @@ public class ModItemModelProvider extends ItemModelProvider {
                 // 这里的key值与其它模型不同，需要注意
                 .texture("wall", ResourceLocation.fromNamespaceAndPath(StudyMod.MOD_ID,
                         "block/" + baseBlock.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(StudyMod.MOD_ID, "item/" + item.getId().getPath()));
     }
 }

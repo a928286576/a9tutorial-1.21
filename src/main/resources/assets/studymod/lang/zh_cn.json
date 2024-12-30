@@ -7,6 +7,12 @@
   "item.studymod.four": "其四",
   "item.studymod.five": "其五",
 
+  "item.studymod.one_sword": "一之剑",
+  "item.studymod.one_pickaxe": "一之镐",
+  "item.studymod.one_axe": "一之斧",
+  "item.studymod.one_shovel": "一之铲",
+  "item.studymod.one_hoe": "一之锄",
+
   "block.studymod.one_block": "一之块",
   "block.studymod.one_ore": "一之矿",
   "block.studymod.magic_block": "魔法块",

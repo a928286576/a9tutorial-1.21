@@ -2,6 +2,8 @@ package com.a928286576.studymod.datagen;
 
 import com.a928286576.studymod.StudyMod;
 import com.a928286576.studymod.block.ModBlocks;
+import com.a928286576.studymod.item.ModToolTiers;
+import com.a928286576.studymod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -31,13 +33,28 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.ONE_WALL.get())
                 .add(ModBlocks.ONE_STAIRS.get())
                 .add(ModBlocks.ONE_SLAB.get())
-                .add(ModBlocks.ONE_PRESSURE_PLATE.get());
+                .add(ModBlocks.ONE_PRESSURE_PLATE.get())
+                .add(ModBlocks.LAMP_BLOCK.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.ONE_BLOCK.get());
+                .add(ModBlocks.ONE_BLOCK.get())
+                .add(ModBlocks.LAMP_BLOCK.get());
+
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.ONE_ORE.get())
+                .add(ModBlocks.ONE_ORE.get());
+
+
+
+        tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.MAGIC_BLOCK.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.ONE_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.ONE_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.ONE_WALL.get());
+
+        tag(ModTags.Blocks.NEEDS_ONE_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ONE_BUTTON.get())
                 .add(ModBlocks.ONE_DOOR.get())
                 .add(ModBlocks.ONE_TRAPDOOR.get())
@@ -46,13 +63,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.ONE_WALL.get())
                 .add(ModBlocks.ONE_STAIRS.get())
                 .add(ModBlocks.ONE_SLAB.get())
-                .add(ModBlocks.ONE_PRESSURE_PLATE.get());;
+                .add(ModBlocks.ONE_PRESSURE_PLATE.get());
 
-        tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.MAGIC_BLOCK.get());
-
-        tag(BlockTags.FENCES).add(ModBlocks.ONE_FENCE.get());
-        tag(BlockTags.FENCE_GATES).add(ModBlocks.ONE_FENCE_GATE.get());
-        tag(BlockTags.WALLS).add(ModBlocks.ONE_WALL.get());
+        tag(ModTags.Blocks.INCORRECT_FOR_ONE_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_ONE_TOOL);
     }
 }
