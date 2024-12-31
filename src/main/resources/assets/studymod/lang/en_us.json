@@ -14,6 +14,11 @@
   "item.studymod.one_hoe": "One Hoe",
   "item.studymod.one_hammer": "One Hammer",
 
+  "item.studymod.one_helmet": "One Helmet",
+  "item.studymod.one_chestplate": "One Chestplate",
+  "item.studymod.one_leggings": "One Leggings",
+  "item.studymod.one_boots": "One Boots",
+
   "block.studymod.one_block": "Block of One",
   "block.studymod.one_ore": "Ore of One",
   "block.studymod.magic_block": "Magic Block",

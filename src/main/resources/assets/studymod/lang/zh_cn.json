@@ -14,6 +14,11 @@
   "item.studymod.one_hoe": "一之锄",
   "item.studymod.one_hammer": "一之锤",
 
+  "item.studymod.one_helmet": "一帽",
+  "item.studymod.one_chestplate": "一胄",
+  "item.studymod.one_leggings": "一披",
+  "item.studymod.one_boots": "一足",
+
   "block.studymod.one_block": "一之块",
   "block.studymod.one_ore": "一之矿",
   "block.studymod.magic_block": "魔法块",

@@ -63,6 +63,19 @@ public class ModItems {
     public static final DeferredItem<HammerItem> ONE_HAMMER = ITEMS.register("one_hammer",
             () -> new HammerItem(ModToolTiers.ONE, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.ONE, 5f, -2.5f))));
+    //护甲物品的注册
+    public static final DeferredItem<ArmorItem> ONE_BOOTS = ITEMS.register("one_boots",
+            () -> new ArmorItem(ModArmorMaterials.ONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+    public static final DeferredItem<ArmorItem> ONE_LEGGINGS = ITEMS.register("one_leggings",
+            () -> new ArmorItem(ModArmorMaterials.ONE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+    public static final DeferredItem<ArmorItem> ONE_CHESTPLATE = ITEMS.register("one_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.ONE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+    public static final DeferredItem<ArmorItem> ONE_HELMET = ITEMS.register("one_helmet",
+            () -> new ArmorItem(ModArmorMaterials.ONE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
 
     //(第一节创建物品)以下这三行与StudyMod中接入总线相呼应
     public static void register(IEventBus eventBus){
