@@ -38,6 +38,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ONE_AXE);
         handheldItem(ModItems.ONE_HOE);
 
+        handheldItem(ModItems.ONE_HAMMER);
+
     }
 
     //按钮类型的物品模型

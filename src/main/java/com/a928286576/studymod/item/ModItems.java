@@ -2,6 +2,7 @@ package com.a928286576.studymod.item;
 
 import com.a928286576.studymod.StudyMod;
 import com.a928286576.studymod.item.custom.FuelItem;
+import com.a928286576.studymod.item.custom.HammerItem;
 import com.a928286576.studymod.item.custom.TwoItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
@@ -41,23 +42,27 @@ public class ModItems {
     //一把剑
     public static final DeferredItem<SwordItem> ONE_SWORD = ITEMS.register("one_sword",
             () -> new SwordItem(ModToolTiers.ONE, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTiers.ONE, 5, -2f))));
+                    .attributes(SwordItem.createAttributes(ModToolTiers.ONE, 2, -2f))));
     //一把稿
     public static final DeferredItem<PickaxeItem> ONE_PICKAXE = ITEMS.register("one_pickaxe",
             () -> new PickaxeItem(ModToolTiers.ONE, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ONE, 1.0f, -3f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ONE, 1.0f, -2f))));
     //一把铲
     public static final DeferredItem<ShovelItem> ONE_SHOVEL = ITEMS.register("one_shovel",
             () -> new ShovelItem(ModToolTiers.ONE, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(ModToolTiers.ONE, 1.0f, -3f))));
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.ONE, 1.0f, -1.5f))));
     //一把斧
     public static final DeferredItem<AxeItem> ONE_AXE = ITEMS.register("one_axe",
             () -> new AxeItem(ModToolTiers.ONE, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.ONE, 8.0f, -4f))));
+                    .attributes(AxeItem.createAttributes(ModToolTiers.ONE, 4.0f, -2f))));
     //一把锄
     public static final DeferredItem<HoeItem> ONE_HOE = ITEMS.register("one_hoe",
             () -> new HoeItem(ModToolTiers.ONE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.ONE, 0f, -2.5f))));
+    //一把锤
+    public static final DeferredItem<HammerItem> ONE_HAMMER = ITEMS.register("one_hammer",
+            () -> new HammerItem(ModToolTiers.ONE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ONE, 5f, -2.5f))));
 
     //(第一节创建物品)以下这三行与StudyMod中接入总线相呼应
     public static void register(IEventBus eventBus){

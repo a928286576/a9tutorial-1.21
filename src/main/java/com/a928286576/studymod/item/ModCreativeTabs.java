@@ -34,6 +34,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.ONE_AXE);
                         output.accept(ModItems.ONE_HOE);
 
+                        output.accept(ModItems.ONE_HAMMER);
+
                     }).build());
     //(第三节创造物品标签)和上面这个相同,区别是另外定义了跟在哪个标签后
     public static final Supplier<CreativeModeTab> FIRST_BLOCKS_TAB = CREATIVE_MODE_TAB.register("first_blocks_tab",
